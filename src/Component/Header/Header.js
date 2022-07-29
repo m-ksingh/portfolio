@@ -2,6 +2,7 @@ import React from 'react'
 import "../Css/header.css"
 import resume from "../../Assets/Mayank_Kr_Singh.pdf";
 import MS from "../../Assets/favicon.ico"
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
@@ -27,18 +28,18 @@ const Navbar = () => {
       <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0" style={{boxShadow:"5px solid"}}>
         <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">
-                <img src={MS} height="30" width="40"/>
-            </a>
+            <Link class="nav-link" aria-current="page" to="#">
+                <img src={MS} height="30" width="40" alt='icon'/>
+            </Link>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">About</a>
+            <Link class="nav-link" aria-current="page" to="#">About</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <Link class="nav-link" to="#">Projects</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <Link class="nav-link" to="#">Skills</Link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href = "mailto:mstict16@gmail.com">Contact</a>
@@ -68,17 +69,16 @@ const Navbar = () => {
             rel="noreferrer noopener"
           
             style={{color:"#CCD6F6"}}
-          >Contact me</a
-          >
-          <a
-          href={resume}
+          >Contact me</a>
+          
+          <Link
+          to={resume}
             class="btn  btn-lg m-2"
          style={{color:"#CCD6F6"}}
             target="_blank"
             rel="noreferrer noopener"
             role="button"
-          > Resume</a
-          >
+          > Resume</Link>
         </div>
       </div>
     </div>
