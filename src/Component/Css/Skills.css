@@ -1,0 +1,19 @@
+.skill{
+	background-color: #F0F8FF;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.underline{
+	width: 160px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
+    border-image-slice: 1;
+	margin: auto;
+}
+.iconcolor{
+    color:#90CAF9
+}
+.tchnology{
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,59 @@
+body{
+    font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+background: "aliceblue"
+}
+hr{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
+    border-image-slice: 1;
+}
+
+.nav-link{
+font-size: 20px;
+font-weight: bold;
+}
+
+#intro-example {
+    height: 400px;
+    background-image: url('https://ju-makerspace.github.io/images/webdev2.jpg');
+  
+    background-position: top left;
+    animation: mymove 10s infinite;
+  }
+
+
+
+@keyframes mymove {
+  50% {background-position: center;}
+}
+
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+  .name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+  .singh{
+font-size: 20px;
+font-weight: 800;
+  }
+  .designation{
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .btn{
+    border: 1px solid ;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color:#505253;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    
+
+}
